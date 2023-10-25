@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays in JS</title>
+
+</head>
+<body>
+    <h2>Arrays in JS</h2>
+
+    <script>
+        // Array can keep more than one similar or non similar items
+        let agearray=[23,34,56,97];//array of similar items
+        let names=["Pankaj","rahul","rohit","prem"];
+        let salaries=[22844,26844.56,2057];
+        let randomarray=[12,"peter",23844];
+        console.log(randomarray);
+        console.log(salaries.length);
+        salaries=salaries.sort();
+        console.log("***salaries after sorting***");
+        console.log(salaries);
+        salaries.push(8888888.88)
+        console.log(salaries);
+
+        console.log("***salaries after Addition***");
+        // removes the 2 items from 0 d=index and adds 777 and 888 in their palace
+        console.log(salaries.splice(0,2,777,888));//index,no. of items to be removed or added
+        console.log(salaries);
+
+        console.log("***salaries after Deletion***");
+        console.log(salaries.splice(0,2));//index,no. of items to be removed or added
+        console.log(salaries);
+
+
+
+
+       
+
+        //console.log(salaries);
+        //console.log(typeof( salaries));
+        console.log(randomarray[2]);//gives item at 2nd index
+        console.log(randomarray[3]);//gives item at 3rd index i.e undefined
+        
+       // let deptarray = new Array(4);//it will create 4 empty items
+       let deptarray = new Array("phy","chem","math");
+       console.log(deptarray);
+       console.log(typeof( deptarray));// array in js is of type object
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects in JS</title>
+</head>
+<body>
+    <h1>Objects in JS</h1>
+    <script>
+        let var1=22;
+        console.log("Type of var1 is "+typeof(var1));
+        let var2="john";
+        console.log("Type of var2 is "+typeof(var2));
+        let var3=40.67;
+        console.log("Type of var3 is "+typeof(var3));
+        let var4=false;
+        console.log("Type of var4 is "+typeof(var4));
+        let var5;//Default of js variables is undefined...if(var5)=>false
+        console.log("Type of var5 is "+typeof(var5));
+        let var6=undefined;
+        console.log("Type of var6 is "+typeof(var6));
+        let var7=null;
+        console.log("Type of var7 is "+typeof(var7));
+
+        //Create my on data type and its object
+        let student = {
+            name: "Peter",
+            rollno: 567,
+            age:23
+        };
+        console.log(student);
+        console.log(typeof(student)) ;
+        console.log(student.name);
+
+        //Object destructing
+        const{rollno,age}=student;
+        console.log(rollno);
+        console.log(age);
+
+
+        
+    </script>
+</body>
+</html>

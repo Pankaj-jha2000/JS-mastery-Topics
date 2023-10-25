@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scope in JS</title>
+</head>
+<body>
+    <h2>Scope of variables in JS</h2>
+    <script>
+        // if we declare variable directly inside script tag tnhan it takes global scope
+        var name = "Peter";
+        var name = "John";// variables re-declaretion with var keyword does not give error in JS
+        console.log(name);
+        function f1(){
+            var name2="jane"// this will take local scope of the function
+            console.log(name);
+        }
+        console.log("Your name is " + name);
+       // console.log(name2);// this will give error bcz name2 has scope only within f1 function
+       let output = "Hello";
+      // let output = "Hello2";//let will not allow to redecleration of same variable
+       function f2(){
+        let output = "New Hello";// but let will allow redecleration inside a function or any block
+        console.log("inside Let "+ output);
+
+       }
+       console.log("outside Let "+ output);
+
+       const finalVal = "This cannot be modified, as it's a constant";
+       //finalVal = " i am changing value of constant hence it will give error";
+       cosnsole.log(finalVal);
+
+    </script>
+</body>
+</html>
